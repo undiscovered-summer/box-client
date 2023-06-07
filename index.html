@@ -5,8 +5,10 @@
         <!-- test webhook -->
     </head>
     <body>
-        <h1>Enter text here...</h1>
-        <input type="text" placeholder="Enter text here">
-        <input type="submit" value="Submit">
+        <form action="INSERT-ENDPOINT" method="POST">
+            <h1>Enter text here...</h1>
+            <input type="text" placeholder="Enter text here" minlength="1" maxlength="140" required>
+            <input type="submit" name="message" value="Submit">
+        </form>
     </body>
 </html>
